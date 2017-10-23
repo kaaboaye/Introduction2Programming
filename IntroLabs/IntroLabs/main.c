@@ -8,10 +8,11 @@
 
 #include <stdio.h>
 
-#include "greetings.h"
+#include "simple.h"
 
 int main(int argc, const char * argv[]) {
-    write_message(sizeof("Wawrzyniak"));
+    
+    lines_with(argv[1][0]);
     
     return 0;
 }

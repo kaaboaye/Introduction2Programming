@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60306C601F9DF530003CF5B1 /* simple.c in Sources */ = {isa = PBXBuildFile; fileRef = 60306C5F1F9DF530003CF5B1 /* simple.c */; };
 		6070F1091F9D1A8F000FCE51 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6070F1081F9D1A8F000FCE51 /* main.c */; };
 		6070F1111F9D1B08000FCE51 /* greetings.c in Sources */ = {isa = PBXBuildFile; fileRef = 6070F1101F9D1B08000FCE51 /* greetings.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		60306C5E1F9DF530003CF5B1 /* simple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simple.h; sourceTree = "<group>"; };
+		60306C5F1F9DF530003CF5B1 /* simple.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = simple.c; sourceTree = "<group>"; };
+		60306C621F9DF7E4003CF5B1 /* simple_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = simple_private.h; sourceTree = "<group>"; };
+		60306C631F9E0362003CF5B1 /* CONST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
 		6070F1051F9D1A8F000FCE51 /* IntroLabs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IntroLabs; sourceTree = BUILT_PRODUCTS_DIR; };
 		6070F1081F9D1A8F000FCE51 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6070F10F1F9D1B08000FCE51 /* greetings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = greetings.h; sourceTree = "<group>"; };
@@ -63,6 +68,10 @@
 				6070F1081F9D1A8F000FCE51 /* main.c */,
 				6070F10F1F9D1B08000FCE51 /* greetings.h */,
 				6070F1101F9D1B08000FCE51 /* greetings.c */,
+				60306C5E1F9DF530003CF5B1 /* simple.h */,
+				60306C5F1F9DF530003CF5B1 /* simple.c */,
+				60306C621F9DF7E4003CF5B1 /* simple_private.h */,
+				60306C631F9E0362003CF5B1 /* CONST.h */,
 			);
 			path = IntroLabs;
 			sourceTree = "<group>";
@@ -126,6 +135,7 @@
 			files = (
 				6070F1111F9D1B08000FCE51 /* greetings.c in Sources */,
 				6070F1091F9D1A8F000FCE51 /* main.c in Sources */,
+				60306C601F9DF530003CF5B1 /* simple.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
