@@ -11,6 +11,8 @@
 
 #define LINE_LENGHT 256
 
-typedef enum { false, true } bool;
+typedef char bool;
+#define false 0
+#define true 1
 
 #endif /* CONST_h */
