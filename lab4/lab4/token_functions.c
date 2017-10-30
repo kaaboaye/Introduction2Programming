@@ -198,6 +198,11 @@ bool next_float(char *str, const int len)
     return false;
 }
 
+bool next_phone_num(char *str, const int len)
+{
+    
+}
+
 bool is_lowercase(const char c)
 {
     return (c >= 'a' && c <= 'z');

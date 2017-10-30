@@ -30,7 +30,7 @@ bool next_word(char *str, const int len);
 bool next_name(char *name, const int len);
 bool next_int(char *str, const int len);
 bool next_float(char *str, const int len);
-bool next_phone_num(char *str);
+bool next_phone_num(char *str, const int len);
 
 bool is_lowercase(const char c);
 bool is_uppercase(const char c);
