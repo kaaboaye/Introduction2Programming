@@ -11,7 +11,7 @@
 #include "simple.h"
 
 int main(int argc, const char * argv[]) {
-  lines_with('c');
+  lines_with('a');
   
   return 0;
 }
