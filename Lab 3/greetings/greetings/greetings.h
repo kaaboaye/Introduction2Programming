@@ -1,8 +1,8 @@
 //
-//  Greetings.h
-//  IntroLabs
+//  greetings.h
+//  greetings
 //
-//  Created by Mieszko Wawrzyniak on 22/10/2017.
+//  Created by Mieszko Wawrzyniak on 04/11/2017.
 //  Copyright © 2017 Mieszko Wawrzyniak. All rights reserved.
 //
 
@@ -11,6 +11,6 @@
 
 #include <stdio.h>
 
-void write_message(int times);
+void write_message(void);
 
 #endif /* greetings_h */
