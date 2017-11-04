@@ -8,6 +8,12 @@
 
 #include "simple.h"
 
+
+/**
+ Prints each line which containts given character
+
+ @param c A wanted character
+ */
 void lines_with(const char c)
 {
   char line[LINE_LEN];
@@ -21,6 +27,14 @@ void lines_with(const char c)
   }
 }
 
+
+/**
+ Check if given line containts given character
+
+ @param c A wanted character
+ @param line Line
+ @return Weather character was found in line
+ */
 bool contains(const char c, char *line)
 {
   for (int i = 0; line[i]; i++)
