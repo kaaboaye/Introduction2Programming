@@ -34,5 +34,6 @@ bool next_phone_num(char *str, const int len);
 
 bool is_lowercase(const char c);
 bool is_uppercase(const char c);
+bool in_range(const int num, const int begin, const int end);
 
 #endif /* token_functions_h */

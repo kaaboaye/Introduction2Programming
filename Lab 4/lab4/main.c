@@ -35,14 +35,21 @@ int main(int argc, const char * argv[]) {
 //
 //    k = next_int(str, LINE_LEN);
 //    printf("Return: %d\nInt: %s\n", k, str);
-    
-    // next_int float
-    char str[LINE_LEN];
-    bool k;
-    
-    k = next_float(str, LINE_LEN);
-    printf("Return: %d\nFloat: %s\n", k, str);
+//
+//    // next_int float
+//    char str[LINE_LEN];
+//    bool k;
+//
+//    k = next_float(str, LINE_LEN);
+//    printf("Return: %d\nFloat: %s\n", k, str);
+  
+      // next_int phone number
+      char str[LINE_LEN];
+      bool k;
+  
+      k = next_phone_num(str, LINE_LEN);
+      printf("Return: %d\nNumber: %s\n", k, str);
 
-    
+  
     return 0;
 }

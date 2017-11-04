@@ -200,7 +200,58 @@ bool next_float(char *str, const int len)
 
 bool next_phone_num(char *str, const int len)
 {
+    bool is_num = false;
+    int i = 0;
+    char c;
     
+    if (len < 11) return OVERRIDE;
+    
+    while (EOF != (c = getchar()))
+    {
+        // Wasn't any number yet in the stdin
+        if (!is_num && !isdigit(c)) continue;
+        
+        // Detect beginning of the phone number
+        if (!is_num && isdigit(c)) is_num = true;
+        
+        // Check the pattern: digits
+        if (in_range(i, 0, 2) ||
+            in_range(i, 4, 6) ||
+            in_range(i, 8, 10))
+        {
+            if (!isdigit(c))
+            {
+                is_num = false;
+                i = 0;
+                continue;
+            }
+        }
+        
+        // Check the pattern: slashs
+        if (i == 3 ||
+            i == 7 ||
+            i == 11)
+        {
+            if (c != '/')
+            {
+                is_num = false;
+                i = 0;
+                continue;
+            }
+        }
+        
+        str[i] = c;
+        i++;
+        
+        // End of number
+        if (i == 11)
+        {
+            str[i] = 0;
+            return true;
+        }
+    }
+    
+    return false;
 }
 
 bool is_lowercase(const char c)
@@ -211,4 +262,9 @@ bool is_lowercase(const char c)
 bool is_uppercase(const char c)
 {
     return (c >= 'A' && c <= 'Z');
+}
+
+bool in_range(const int num, const int begin, const int end)
+{
+    return (num >= begin && num <= end);
 }
