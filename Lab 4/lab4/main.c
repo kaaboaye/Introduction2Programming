@@ -15,41 +15,11 @@
 #include <ctype.h>
 
 int main(int argc, const char * argv[]) {
-//    // next_word test
-//    char word[LINE_LEN];
-//    bool k;
-//
-//    k = next_word(word, LINE_LEN);
-//    printf("Return: %d\nWord: %s\n", k, word);
-//
-//    // next_name test
-//    char name[LINE_LEN];
-//    bool k;
-//
-//    k = next_name(name, LINE_LEN);
-//    printf("Return: %d\nName: %s\n", k, name);
-//
-//    // next_int test
-//    char str[LINE_LEN];
-//    bool k;
-//
-//    k = next_int(str, LINE_LEN);
-//    printf("Return: %d\nInt: %s\n", k, str);
-//
-//    // next_int float
-//    char str[LINE_LEN];
-//    bool k;
-//
-//    k = next_float(str, LINE_LEN);
-//    printf("Return: %d\nFloat: %s\n", k, str);
+  char number[LINE_LEN];
   
-      // next_int phone number
-      char str[LINE_LEN];
-      bool k;
+  while (next_int(number, LINE_LEN)) {
+    puts(number);
+  }
   
-      k = next_phone_num(str, LINE_LEN);
-      printf("Return: %d\nNumber: %s\n", k, str);
-
-  
-    return 0;
+  return 0;
 }
