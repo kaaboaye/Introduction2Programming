@@ -8,38 +8,11 @@
 
 #include "running_modes.h"
 
-void lines_to_lowercase(void) {
-    char line[LINE_LEN];
-    
-    while (fgets(line, LINE_LEN, stdin)) {
-        line_to_lowercase(line);
-        printf("%s", line);
-    }
-}
-
-void lines_to_uppercase(void) {
-    char line[LINE_LEN];
-    
-    while (fgets(line, LINE_LEN, stdin)) {
-        line_to_uppercase(line);
-        printf("%s", line);
-    }
-}
-
-void lines_swap(void) {
-    char line[LINE_LEN];
-    
-    while (fgets(line, LINE_LEN, stdin)) {
-        line_swap(line);
-        printf("%s", line);
-    }
-}
-
-void lines_to_sentence(void) {
-    char line[LINE_LEN];
-    
-    while (fgets(line, LINE_LEN, stdin)) {
-        line_to_sentence(line);
-        printf("%s", line);
-    }
+void run_with(void (*mode)(char*) ) {
+  char line[LINE_LEN];
+  
+  while (fgets(line, LINE_LEN, stdin)) {
+    (*mode)(line);
+    printf("%s", line);
+  }
 }

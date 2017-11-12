@@ -14,12 +14,6 @@
 #include "consts.h"
 #include "line_methods.h"
 
-void lines_to_lowercase(void);
-
-void lines_to_uppercase(void);
-
-void lines_swap(void);
-
-void lines_to_sentence(void);
+void run_with(void (*mode)(char*) );
 
 #endif /* running_modes_h */

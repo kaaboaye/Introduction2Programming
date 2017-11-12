@@ -10,6 +10,7 @@
 #include <unistd.h>
 
 #include "running_modes.h"
+#include "line_methods.h"
 
 int main(int argc, char * argv[]) {
     char option;
@@ -18,23 +19,23 @@ int main(int argc, char * argv[]) {
     
     switch (option) {
         case 'l': case 'L':
-            lines_to_lowercase();
+            run_with(line_to_lowercase);
             break;
             
         case 'u': case 'U':
-            lines_to_uppercase();
+            run_with(line_to_uppercase);
             break;
             
         case 'c': case 'C':
-            lines_swap();
+            run_with(line_swap);
             break;
             
         case 'n': case 'N':
-            lines_to_sentence();
+            run_with(line_to_sentence);
             break;
             
         default:
-            lines_to_uppercase();
+            run_with(line_to_uppercase);
             break;
     }
     
