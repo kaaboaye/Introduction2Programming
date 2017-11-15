@@ -22,21 +22,20 @@
  run the application.
  */
 typedef enum {
-    rm_line_begins,
-    rm_line_begins_in_range,
-    rm_first_word_begins_with,
-    rm_first_word_ends_with
+  rm_word_begins,
+  rm_word_in_range,
+  rm_word_ends,
 } running_mode;
 
 /**
  Application config
  */
 typedef struct {
-    bool case_sensitive;
-    char *arg1;
-    char *arg2;
-    running_mode rm;
-    
+  bool case_sensitive;
+  char *arg1;
+  char *arg2;
+  running_mode rm;
+  
 } config;
 
 

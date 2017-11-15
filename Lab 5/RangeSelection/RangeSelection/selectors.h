@@ -23,47 +23,11 @@
 
  @param mode Function wich will decide wether to print line or not.
  */
-void run_with(bool (*mode)(const config *conf, const char *line), const config *conf);
+void run_with(bool (*mode)(const config*, const char*), const config *conf);
 
-
-
-/**
- Checks wether line begins with given pattern ( conf.arg1 )
-
- @param conf Application config
- @param line Input line
- @return Determinates wether line can be printed.
- */
-bool line_begins(const config *conf, const char *line);
-
-/**
- NOT IMPLEMENTED
-
- @param conf Application config
- @param line Input line
- @return NOT IMPLEMENTED
- */
-bool line_begins_in_range(const config *conf, const char *line);
-
-/**
- NOT IMPLEMENTED
- 
- @param conf Application config
- @param line Input line
- @return NOT IMPLEMENTED
- */
-bool first_word_begins_with(const config *conf, const char *line);
-
-/**
- NOT IMPLEMENTED
- 
- @param conf Application config
- @param line Input line
- @return NOT IMPLEMENTED
- */
-bool first_word_ends_with(const config *conf, const char *line);
-
-
+bool word_begins(const config *conf, const char *word);
+bool word_in_range(const config *conf, const char *word);
+bool word_ends(const config *conf, const char *word);
 
 /**
  Sets first word to `word` argument from given line.
@@ -73,15 +37,5 @@ bool first_word_ends_with(const config *conf, const char *line);
  @param len Word length
  */
 void get_first_word(const char *line, char *word, int len);
-
-/**
- Determinates wether given number is in range (inclusively).
-
- @param num Input number
- @param begin Begin of the range
- @param end End of the range
- @return Indicator
- */
-bool in_range(const int num, const int begin, const int end);
 
 #endif /* selectors_h */

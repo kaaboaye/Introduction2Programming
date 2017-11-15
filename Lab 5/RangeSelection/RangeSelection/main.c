@@ -12,25 +12,20 @@
 #include "selectors.h"
 
 int main(int argc, char * argv[]) {
-    config conf = new_config();
-    set_config(&conf, argc, argv);
-    
-    switch (conf.rm) {
-        case rm_line_begins:
-            run_with(line_begins, &conf);
-            break;
-            
-        case rm_line_begins_in_range:
-            run_with(line_begins_in_range, &conf);
-            break;
-            
-        case rm_first_word_begins_with:
-            run_with(first_word_begins_with, &conf);
-            break;
-        case rm_first_word_ends_with:
-            run_with(first_word_ends_with, &conf);
-            break;
-    }
-    
-    return 0;
+  config conf = new_config();
+  set_config(&conf, argc, argv);
+
+  switch (conf.rm) {
+    case rm_word_begins:
+      run_with(word_begins, &conf);
+      break;
+    case rm_word_in_range:
+      run_with(word_in_range, &conf);
+      break;
+    case rm_word_ends:
+      run_with(word_ends, &conf);
+      break;
+  }
+  
+  return 0;
 }
