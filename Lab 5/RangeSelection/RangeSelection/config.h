@@ -9,11 +9,10 @@
 #ifndef config_h
 #define config_h
 
-#include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include <unistd.h>
+
+#include "helpers.h"
 
 /**
  Running mode
@@ -32,41 +31,31 @@ typedef enum {
  */
 typedef struct {
   bool case_sensitive;
+  bool reverse;
   char *arg1;
   char *arg2;
   running_mode rm;
   
 } config;
 
-
+extern config conf;
 
 /**
  config's constructor.
-
- @return New config
  */
-config new_config(void);
+void new_config(int argc, char * argv[]);
 
 /**
  Reads config from given parameters and sets it to the given object.
-
- @param conf Given config object
- @param argc Number of arguments
- @param argv Arguments
  */
-void set_config(config *conf, int argc, char * argv[]);
+void set_config(int argc, char * argv[]);
+
+void apply_not_casesensitive(void);
+void apply_reverse(void);
 
 /**
  Prints user freandly usage message :v
  */
 void print_usage(void);
-
-/**
- Checks if given string is "-"
-
- @param str Input string
- @return Indicator
- */
-bool _is_dash(const char *str);
 
 #endif /* config_h */

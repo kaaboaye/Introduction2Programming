@@ -7,12 +7,11 @@
 //
 
 #include <stdio.h>
+#include <ctype.h>
 
 #include "const.h"
 #include "bool.h"
 #include "token_functions.h"
-
-#include <ctype.h>
 
 int main(int argc, const char * argv[]) {
   char number[LINE_LEN];

@@ -11,19 +11,20 @@
 #include "config.h"
 #include "selectors.h"
 
+config conf;
+
 int main(int argc, char * argv[]) {
-  config conf = new_config();
-  set_config(&conf, argc, argv);
+  new_config(argc, argv);
 
   switch (conf.rm) {
     case rm_word_begins:
-      run_with(word_begins, &conf);
+      run_with(word_begins);
       break;
     case rm_word_in_range:
-      run_with(word_in_range, &conf);
+      run_with(word_in_range);
       break;
     case rm_word_ends:
-      run_with(word_ends, &conf);
+      run_with(word_ends);
       break;
   }
   
