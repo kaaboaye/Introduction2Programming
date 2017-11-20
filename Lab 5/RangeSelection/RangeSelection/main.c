@@ -17,6 +17,9 @@ int main(int argc, char * argv[]) {
   new_config(argc, argv);
 
   switch (conf.rm) {
+    case rm_line_begins:
+      run_with(line_begins);
+      break;
     case rm_word_begins:
       run_with(word_begins);
       break;

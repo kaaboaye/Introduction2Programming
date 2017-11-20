@@ -26,9 +26,15 @@ void run_with(bool (*mode)(const char*)) {
     }
     
     if ((*mode)(word)) { // If lines fulfill expectations
-      printf("\t%s", line);
+      printf("%s", line);
     }
   }
+}
+
+bool line_begins(const char *line) {
+  const char *pattern = conf.arg1;
+  
+  return (strncmp(pattern, line, strlen(pattern)) == 0);
 }
 
 bool word_begins(const char *word) {

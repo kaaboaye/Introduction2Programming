@@ -62,7 +62,7 @@ void set_config(int argc, char * argv[]) {
   
   // Choose running mode
   if (non_flags_arguments == 1) {
-    conf.rm = rm_word_begins;
+    conf.rm = rm_line_begins;
   }
   else if (non_flags_arguments == 2) {
     if (_is_dash(conf.arg1)) {

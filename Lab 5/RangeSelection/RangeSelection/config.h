@@ -21,6 +21,7 @@
  run the application.
  */
 typedef enum {
+  rm_line_begins,
   rm_word_begins,
   rm_word_in_range,
   rm_word_ends,

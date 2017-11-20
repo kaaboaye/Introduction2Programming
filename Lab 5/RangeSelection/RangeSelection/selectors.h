@@ -24,6 +24,7 @@
  */
 void run_with(bool (*mode)(const char*));
 
+bool line_begins(const char *line);
 bool word_begins(const char *word);
 bool word_in_range(const char *word);
 bool word_ends(const char *word);
