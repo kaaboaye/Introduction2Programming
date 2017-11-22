@@ -40,7 +40,7 @@ bool line_begins(const char *line) {
 bool word_begins(const char *word) {
   const char *pattern = conf.arg1;
   
-  return (strcmp(pattern, word) <= 0);
+  return (strncmp(pattern, word, strlen(pattern)) <= 0);
 }
 
 bool word_in_range(const char *word) {
@@ -51,5 +51,5 @@ bool word_in_range(const char *word) {
 bool word_ends(const char *word) {
   const char *pattern = conf.arg2;
   
-  return (strcmp(pattern, word) >= 0);
+  return (strncmp(pattern, word, strlen(pattern)) >= 0);
 }

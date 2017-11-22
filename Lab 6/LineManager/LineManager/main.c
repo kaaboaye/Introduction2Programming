@@ -31,11 +31,12 @@ int main(int argc, char * argv[]) {
             break;
             
         case 'n': case 'N':
-            run_with(line_to_sentence);
+            run_with(make_names);
             break;
             
         default:
-            run_with(line_to_uppercase);
+//            run_with(line_to_uppercase);
+            run_with(make_names);
             break;
     }
     

@@ -49,6 +49,8 @@ void new_config(int argc, char * argv[]);
 /**
  Reads config from given parameters and sets it to the given object.
  */
+void read_config(int argc, char * argv[]);
+
 void set_config(int argc, char * argv[]);
 
 void apply_not_casesensitive(void);

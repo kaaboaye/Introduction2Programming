@@ -27,7 +27,7 @@ void line_to_lowercase(char *line);
 void line_to_uppercase(char *line);
 
 /**
- Switchs the case of all characters that is change lower case to upper
+ Switchs the case of all characters that is change lower case to upper.
  case and vice versa.
 
  @param line Input line
@@ -35,10 +35,10 @@ void line_to_uppercase(char *line);
 void line_swap(char *line);
 
 /**
- Make the first character uppercaase and the rest lowercase
-
+ Make the every word in line starting uppercase.
+ 
  @param line Input line
  */
-void line_to_sentence(char *line);
+void make_names(char *line);
 
 #endif /* line_methods_h */

@@ -15,11 +15,16 @@ void new_config(int argc, char * argv[]) {
   conf.arg2 = "";
   
   set_config(argc, argv);
-  apply_not_casesensitive();
-  apply_reverse();
 }
 
 void set_config(int argc, char * argv[]) {
+    read_config(argc, argv);
+    apply_not_casesensitive();
+    // Should the arguments be reversed to?
+//    apply_reverse();
+}
+
+void read_config(int argc, char * argv[]) {
   char c;
   int non_flags_arguments = 0;
   
