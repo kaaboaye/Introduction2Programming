@@ -25,7 +25,7 @@ void Update() {
 void ReadToken() {  
   TokenNumber = NAN;
   
-  if (EOF == scanf("%512s", token)) {
+  if (EOF == scanf("%255s", token)) {
     exit(0);
   }
   
