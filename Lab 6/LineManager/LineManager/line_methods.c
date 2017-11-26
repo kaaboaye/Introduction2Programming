@@ -33,10 +33,7 @@ void line_swap(char *line) {
 
 void make_names(char *line) {
     for (int i = 0; line[i]; ++i) {
-        if (i == 0) {
-            line[i] = toupper(line[i]);
-        }
-        else if (!isalpha(line[i - 1])) {
+        if (i == 0 || !isalpha(line[i - 1])) {
             line[i] = toupper(line[i]);
         }
         else {
