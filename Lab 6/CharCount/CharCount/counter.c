@@ -20,7 +20,7 @@ void count(int *chars) {
     }
 }
 
-int find_best(int *chars) {
+int find_best(int *chars, int *ammount) {
     int best = 0;
     int score = 0;
     
@@ -30,21 +30,31 @@ int find_best(int *chars) {
             score = chars[i];
         }
     }
-    
+  
+    (*ammount) = chars[best];
     return best;
 }
 
-int find_worst(int *chars) {
+int find_worst(int *chars, int *ammount) {
     int worst = 0;
-    int score = INT_MAX;
+    int score = 0; // nul
+    int i;
     
-    for (int i = 0; i < 256; ++i) {
+    for (i = 0; i < 256; ++i) {
+        if (chars[i] > 0) {
+            score = chars[i];
+            break;
+        }
+    }
+    
+    for (; i < 256; ++i) {
         if (chars[i] > 0 && chars[i] < score) {
             worst = i;
             score = chars[i];
         }
     }
-    
+  
+    (*ammount) = chars[worst];
     return worst;
 }
 

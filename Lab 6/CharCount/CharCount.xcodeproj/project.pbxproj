@@ -27,7 +27,7 @@
 		604C6B361FB84AF100644CBD /* CharCount */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CharCount; sourceTree = BUILT_PRODUCTS_DIR; };
 		604C6B391FB84AF100644CBD /* main.c */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; tabWidth = 2; };
 		60F3F4721FB84B4A0090BF33 /* counter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = counter.h; sourceTree = "<group>"; };
-		60F3F4731FB84B4A0090BF33 /* counter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = counter.c; sourceTree = "<group>"; };
+		60F3F4731FB84B4A0090BF33 /* counter.c */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.c; path = counter.c; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

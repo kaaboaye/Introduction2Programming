@@ -1,0 +1,6 @@
+add: +;
+plus: +;
+equals: =;
+subtract: -;
+prev: ans;
+prev_result: ans;

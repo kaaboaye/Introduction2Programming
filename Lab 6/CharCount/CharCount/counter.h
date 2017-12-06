@@ -24,13 +24,13 @@ void count(int *chars);
 
  @param chars Input array.
  */
-int find_best(int *chars);
+int find_best(int *chars, int *ammount);
 
 /**
  Finds the less often appearing character in input array.
  
  @param chars Input array.
  */
-int find_worst(int *chars);
+int find_worst(int *chars, int *ammount);
 
 #endif /* counter_h */

@@ -14,16 +14,17 @@
 int main(int argc, char * argv[]) {
   int chars[256];
   int c;
+  int ammount;
   
   count(chars);
   
   switch (getopt(argc, argv, "MLh")) {
     case 'L':
-      c = find_worst(chars);
+      c = find_worst(chars, &ammount);
       break;
       
     case 'M':
-      c = find_best(chars);
+      c = find_best(chars, &ammount);
       break;
       
     case '?': case 'h':
@@ -35,12 +36,12 @@ int main(int argc, char * argv[]) {
       break;
     
     default:
-      c = find_best(chars);
+      c = find_best(chars, &ammount);
       break;
   }
   
   
-  printf("%c %d\n", c, c);
+  printf("%c %d %d\n", c, c, ammount);
   
   return 0;
 
