@@ -2,5 +2,6 @@ add: +;
 plus: +;
 equals: =;
 subtract: -;
+minus: -;
 prev: ans;
 prev_result: ans;

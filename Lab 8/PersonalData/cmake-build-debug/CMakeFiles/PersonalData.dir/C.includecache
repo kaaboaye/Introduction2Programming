@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Debugger.c
+stdio.h
+-
+Debugger.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/PeopleStorage.c
+stdlib.h
+-
+PeopleStorage.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/PeopleStorage.h
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/PeopleStorage.h
+stdio.h
+-
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.h
+Debugger.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.h
+stdbool.h
+-
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/main.c
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/Person.h
+PeopleStorage.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 8/PersonalData/PeopleStorage.h
+
