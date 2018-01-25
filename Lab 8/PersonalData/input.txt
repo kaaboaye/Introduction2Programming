@@ -1,3 +1,8 @@
 Imie Nazwisko;29;123.456;No jest ktos taki;
 GHjhfdg;43;45.34;gfdf;
 A;3;3;f
+Imie Nazwisko;29;123.456;No jest ktos taki;
+GHjhfdg;43;45.34;gfdf;
+A;2;2;f
+oldest;99;10;oldest
+slimest;99;1;slimest

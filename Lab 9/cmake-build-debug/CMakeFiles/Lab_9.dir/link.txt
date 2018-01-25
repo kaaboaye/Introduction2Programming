@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Lab_9.dir/Main.c.o CMakeFiles/Lab_9.dir/Person.c.o CMakeFiles/Lab_9.dir/Debugger.c.o CMakeFiles/Lab_9.dir/People.c.o CMakeFiles/Lab_9.dir/sign.c.o  -o Lab_9 

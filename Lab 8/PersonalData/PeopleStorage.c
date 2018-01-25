@@ -11,6 +11,16 @@ void PeopleStorageInit(PeopleStorage *ps) {
   ps->People = (Person *) malloc(0);
 }
 
+void PeopleStorageFree(PeopleStorage *ps) {
+  // Free memory for each Person in storage
+  for (unsigned int i = 0; i < ps->Count; ++i) {
+    PersonFree(&ps->People[i]);
+  }
+  
+  // Free memory used by PeopleStorage
+  free(ps->People);
+}
+
 void PeopleStorageAdd(PeopleStorage *ps) {
   ps->Count++; // Increase the counter
   ps->People = (Person *) realloc(ps->People, ps->Count * sizeof(Person)); // Allocate memory
@@ -29,6 +39,8 @@ void PeopleStorageRead(PeopleStorage *ps, FILE *input) {
       PersonMove(ps->LastPerson, &p);
     }
     else {
+      PersonFree(&p);
+      
       return;
     }
   }

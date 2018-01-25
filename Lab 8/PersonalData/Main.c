@@ -12,21 +12,25 @@ int main(int argc, char *argv[]) {
   
   if (NULL == (input = fopen("input.txt", "r"))) {
     puts("Cannot open file");
+    puts("Using stdin");
+    input = stdin;
   }
   
   PeopleStorageRead(&storage, input);
   
   // Print all
-  for (unsigned int i = 0; i < storage.Count; ++i) {
-    PersonPrint(&storage.People[i]);
-  }
+//  for (unsigned int i = 0; i < storage.Count; ++i) {
+//    PersonPrint(&storage.People[i]);
+//  }
+//  puts("\n");
   
-  puts("\n");
   printf("Oldest person: ");
   PersonPrint(PeopleStorageGetOldestPerson(&storage));
   
   printf("Slimmest person: ");
   PersonPrint(PeopleStorageGetSlimmestPerson(&storage));
+  
+  PeopleStorageFree(&storage);
   
   return 0;
 }

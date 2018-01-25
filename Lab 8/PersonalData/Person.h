@@ -33,12 +33,18 @@ void PersonFree(Person *p);
 void PersonClean(Person *p);
 
 /**
- *
+ * Copy all data from src to the dest
  * @param dest
  * @param src
  */
 void PersonCopy(Person *dest, Person *src);
 
+/**
+ * Copy data and pointers from src to the dest
+ * and set pointers in src Person to NULL
+ * @param dest
+ * @param src
+ */
 void PersonMove(Person *dest, Person *src);
 
 /**

@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Debugger.c
+stdio.h
+-
+stdlib.h
+-
+Debugger.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Main.c
+People.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/People.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/People.c
+string.h
+-
+stdlib.h
+-
+People.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/People.h
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Person.h
+sign.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/sign.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/People.h
+stdio.h
+-
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Person.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Person.c
+stdlib.h
+-
+memory.h
+-
+printf.h
+-
+Person.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Person.h
+Debugger.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Debugger.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/Person.h
+stdbool.h
+-
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/sign.c
+sign.h
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/sign.h
+
+/Users/mieszkowaw/Code/Introduction2Programming/Lab 9/sign.h
+

@@ -26,6 +26,12 @@ typedef struct {
 void PeopleStorageInit(PeopleStorage *ps);
 
 /**
+ * Frees all memory used by PeopleStorage and each person in this storage
+ * @param ps
+ */
+void PeopleStorageFree(PeopleStorage *ps);
+
+/**
  * Allocate memory for one more element and set LastItem
  * @param ps
  */
